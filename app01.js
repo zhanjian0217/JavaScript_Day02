@@ -42,7 +42,8 @@ const hi = function() {
 
 
 
-// 用const , let    跟 var 宣告有差別 
+// 用const , let    跟 var 宣告有差別 先呼叫 在給定義變數的話 
+// 錯誤訊息分別會出現
 // initialization   undefined
 
 
@@ -136,7 +137,7 @@ default_number(123, "a", "b")
 // Return Value 回傳值
 function add(a, b) {
   // console.log(a + b);
-  // 宣告變數 需要用 const let 不然會造成全域污染
+  // 宣告變數 需要用 const or let 不然會造成全域污染
   // let result = a + b
   return a + b
 }
@@ -217,7 +218,7 @@ function BMI(height ,weight) {
   let w = weight
   let result = w / (h ** 2)
 
-  return result.toFixed(2)
+  return result.toFixed(2) //取小數點第二位
 }
 
 console.log(BMI(170 ,70));
@@ -307,7 +308,7 @@ let zxc = ["a", "b", "c", "d"]
 
 let arr = ["a", "b", "c", "d"]
 
-arr.splice(2, 0 ,"z")
+arr.splice(2, 0 ,"z") //["a", "b", "z", "c", "d"]
 
 console.log(arr);
 
